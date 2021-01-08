@@ -1,0 +1,138 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Antonis F. Lentzakis</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+        <link rel="shortcut icon" href="/favicon.ico"/>
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-42869545-2', 'auto');
+            ga('send', 'pageview');
+        </script>
+	</head>
+	<body>
+
+		<!-- Header -->
+        <section id="header">
+            <header>
+                <span class="image avatar"><img src="{{ bio_image }}" alt="" /></span>
+                <h1 id="logo">Antonis F. Lentzakis</h1>
+                <p>
+                    {{ position }}<br/>
+                    {{ blurb }}
+                </p>
+            </header>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#one" class="active">Bio</a></li>
+                    <li><a href="#two">Projects</a></li>
+                    <li><a href="#three">Publications</a></li>
+                    <li><a href="#four">Contact</a></li>
+                    <li><a href="/cv.pdf">CV</a></li>
+                </ul>
+            </nav>
+        </section>
+
+        <div id="wrapper">
+            <div id="main">
+                <section id="one">
+                    <div class="container">
+                        <header class="major">
+                            <h2>Bio</h2>
+                        </header>
+                        <p>{{ bio }}</p>
+                    </div>
+                </section>
+
+                <section id="two">
+                    <div class="container">
+                        <h2>Projects</h2>
+                        <div class="features">
+                            {% for proj in projects %}
+                            {{ proj }}
+                            {% endfor %}
+                        </div>
+                    </div>
+                </section>
+
+                <section id="three">
+                    <div class="container"/>
+                        <h2>Publications</h2>
+                        <div class="features"/>
+                            <h3>Journals</h3>
+                            <ol>
+                                {% for pub in journals %}
+                                <li>{{ pub }}</li>
+                                {% endfor %}
+                            </ol>
+                            <h3>Conferences</h3>
+                            <ol>
+                                {% for pub in conferences %}
+                                <li>{{ pub }}</li>
+                                {% endfor %}
+                            </ol>
+                            <h3>Theses</h3>
+                            <ol>
+                                {% for pub in theses %}
+                                <li>{{ pub }}</li>
+                                {% endfor %}
+                            </ol>
+                            {% if other %}
+                            <h3>Posters & Presentations</h3>
+                            <ol>
+                                {% for pub in other_pubs %}
+                                <li>{{ pub }}</li>
+                                {% endfor %}
+                            </ol>
+                            {% endif %}
+                        </div>
+                    </div>
+                </section>
+
+                <section id="four">
+                    <div class="container">
+                        <h3>Contact</h3>
+                        <ul class="feature-icons">
+                            <li class="icon fa-github">
+                                <a href="http://github.com/antonios001">
+                                    @antonios001
+                                </a>
+                            </li>
+                            <li class="icon fa-envelope">
+                                antonios001 [at] e [dot] ntu [dot] edu [dot] sg
+                            </li>
+                            <li class="icon fa-book">
+                                <a href="https://scholar.google.com/citations?user=frHFPIIAAAAJ&hl=en&oi=ao"/>
+                                    Google Scholar
+                                </a>
+                            </li>
+                                <li class="icon fa-linkedin">
+                                    <a href="https://www.linkedin.com/in/antonis-f-lentzakis-phd"/>
+                                        LinkedIn
+                                    </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </section>
+
+			</div>
+
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollzer.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
