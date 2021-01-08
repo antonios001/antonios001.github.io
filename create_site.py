@@ -108,5 +108,5 @@ def create_pubs(bib_fname):
 
 if __name__ == "__main__":
     html = create_site()
-    with open("index.html", "w") as f:
+    with open("index.html", "wb") as f:
         f.write(html.encode('ascii', 'ignore'))
