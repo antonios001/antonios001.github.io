@@ -26,8 +26,8 @@
                 <span class="image avatar"><img src="/imgs/me-new.jpg" alt="" /></span>
                 <h1 id="logo">Antonis F. Lentzakis</h1>
                 <p>
-                    Postdoctoral Research Associate at SMART/FM<br/>
-                    Interested in autonomous systems, traffic modeling, management and simulation
+                    Postdoctoral Research Associate at SMART/FM IRG<br/>
+                    Interested in traffic modeling, management and simulation
                 </p>
             </header>
             <nav id="nav">
@@ -56,7 +56,7 @@
                     <div class="container">
                         <h2>Projects</h2>
                         <div class="features">
-                            {% for proj in /site.projects %}
+                            {% for proj in /site.yaml.projects %}
                             {{ proj }}
                             {% endfor %}
                         </div>
