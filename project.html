@@ -1,0 +1,26 @@
+<article>
+    <a href="#" class="image"><img src="{{ image }}" alt="" /></a>
+    <div class="inner">
+        <h4>
+            {{ name }}
+        </h4>
+        <p>
+            <!-- {{ title }} <br/> -->
+            {% if pub_list %}
+            Publications:
+            {{ pub_list|join(", ") }}
+            {% endif %}
+            {% if news_list %}
+            <br/>
+            News:
+            {{ news_list|join(", ") }}
+            {% endif %}
+            {% if video_list %}
+            <br/>
+            Videos:
+            {{ video_list|join(", ") }}
+            {% endif %}
+
+        </p>
+    </div>
+</article>
