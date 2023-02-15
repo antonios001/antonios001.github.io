@@ -10,6 +10,9 @@ blurb: Interested in autonomous systems, traffic modeling, management and simula
 projects:
     - name: Density-based Clustering for Tolling Zone Definition
       links:
+        - link: https://www.sciencedirect.com/science/article/abs/pii/S0965856423000319
+          title: Trans. Res. Part A 2023
+          type: pub
         - link: https://www.sciencedirect.com/science/article/abs/pii/S0968090X20306008?dgcid=author
           title: Trans. Res. Part C 2020
           type: pub
